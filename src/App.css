@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Calendar Styles */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.calendar-day {
+  border: 1px solid #e0e4e8;
+  padding: 10px;
+  position: relative;
+  min-height: 100px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar-day:hover {
+  background-color: #e3e8ee;
+}
+
+.calendar-day span {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.calendar-event {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-event:hover {
+  background-color: #45a049;
+}
+
+/* Event List Styles */
+.event-list {
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.event-list h2 {
+  margin-top: 0;
+}
+
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.event-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.event-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.event-actions {
+  display: flex;
+  gap: 10px; /* Adds space between delete and edit buttons */
+}
+
+.event-actions button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-actions button:hover {
+  background-color: #0056b3;
+}
+
+/* Event Form Styles */
+.event-form {
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.event-form h2 {
+  margin-top: 0;
+}
+
+.event-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-form input,
+.event-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #e0e4e8;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.event-form button {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Adds space between the Add Event and Update Event buttons */
+}
+
+.event-form .update-button {
+margin-bottom: 20px; /* Space between Update Event and Cancel buttons */
+}
+
+.event-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Styles */
+.filter {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds space between filter input and search button */
+}
+
+.filter input {
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.filter button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: #0056b3;
+}
